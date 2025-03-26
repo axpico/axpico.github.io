@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/programming_languages_and_projects.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+    <title>Alessandro Picone - Portfolio</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo">Alessandro Picone</div>
+        <nav class="nav-menu">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#Programming_Languages" class="nav-link">Programming Languages</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="menu-toggle">&#9776;</div>
+    </header>    
+    
+    <section id="home" class="introduction">
+        <div class="intro-container">
+            <h1>Hello, I'm Alessandro Picone</h1>
+            <p>I'm a passionate student developer with a keen interest in creating innovative solutions. Currently pursuing my studies, I'm dedicated to honing my skills and bringing creative ideas to life through code.</p>
+            <a href="#skills" class="cta-button">View My Skills</a>
+        </div>
+    </section>    
+    
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>I am a high school student deeply passionate about technology, particularly AI
+            and game development. Beyond academics, I practices in 10m air shooting and
+            have a background in karate, swimming, and tennis, instilling in me discipline
+            and resilience. Proficient in Java, Python, and Git, but I also know JavaScript, Rust
+            also I'm constantly exploring new programming techniques. With strong
+            communication and teamwork skills, I thrive in collaborative environments. I'm
+            eager to contribute to the dynamic realm of technology, making strides in AI and
+            game development.</p>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="csv-viewer">
+            <div class="csv-header">
+                <h3>My Skills.csv</h3>
+            </div>
+            <table class="csv-table">
+                <tr class="row0">
+                    <th class="col0">Skill</th>
+                    <th class="col1">Level</th>
+                </tr>
+                <tr class="row1">
+                    <td class="col0">Java</td>
+                    <td class="col1">intermediate</td>
+                </tr>
+                <tr class="row2">
+                    <td class="col0">Python</td>
+                    <td class="col1">intermediate</td>
+                </tr>
+                <tr class="row3">
+                    <td class="col0">JavaScript</td>
+                    <td class="col1">Beginner</td>
+                </tr>
+                <tr class="row4">
+                    <td class="col0">Rust</td>
+                    <td class="col1">Beginner</td>
+                </tr>
+                <tr class="row5">
+                    <td class="col0">Ruby</td>
+                    <td class="col1">Beginner</td>
+                </tr>
+                <tr class="row6">
+                    <td class="col0">Git</td>
+                    <td class="col1">intermediate</td>
+                </tr>
+                <tr class="row7">
+                    <td class="col0">Docker</td>
+                    <td class="col1">Beginner</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="Programming_Languages" class="Programming_Languages-section">
+        <h2>Programming Languages</h2>
+        <div class="programming-languages-carousel">
+            <div class="side-box" id="left-box"></div>
+            <button class="arrow" id="prev-arrow">&#8249;</button>
+            <div id="PL_box">
+                <h3 id="name"></h3>
+                <img id="image" src="" alt="Language Logo">
+                <p id="text"></p>
+            </div>
+            <button class="arrow" id="next-arrow">&#8250;</button>
+            <div class="side-box" id="right-box"></div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div id="project-container">
+            <!-- Projects will be dynamically inserted here based on the selected programming language -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>A passionate developer creating innovative solutions.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <p>Email: ale@picone.it</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/alessandro-picone-64b3892ba/">LinkedIn</a></p>
+                <p>GitHub: <a href="https://github.com/axpico">GitHub</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Alessandro Picone. All rights reserved.</p>
+        </div>
+    </footer>    
+</body>
+</html>

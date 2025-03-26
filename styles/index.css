@@ -1,0 +1,553 @@
+:root {
+    /* Catppuccin Macchiato Color Palette */
+    --rosewater: #f4dbd6;
+    --flamingo: #f0c6c6;
+    --pink: #f5bde6;
+    --mauve: #c6a0f6;
+    --red: #ed8796;
+    --maroon: #ee99a0;
+    --peach: #f5a97f;
+    --yellow: #eed49f;
+    --green: #a6da95;
+    --teal: #8bd5ca;
+    --sky: #91d7e3;
+    --sapphire: #7dc4e4;
+    --blue: #8aadf4;
+    --lavender: #b7bdf8;
+    --text: #cad3f5;
+    --subtext1: #b8c0e0;
+    --subtext0: #a5adcb;
+    --overlay2: #939ab7;
+    --overlay1: #8087a2;
+    --overlay0: #6e738d;
+    --surface2: #5b6078;
+    --surface1: #494d64;
+    --surface0: #363a4f;
+    --base: #24273a;
+    --mantle: #1e2030;
+    --crust: #181926;
+}
+
+a {
+    color: var(--sky);
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--base);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--mantle);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--mauve);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: var(--text);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--surface0);
+}
+
+.nav-link.active {
+    background-color: var(--mauve);
+    color: var(--crust);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Introduction Section */
+.introduction {
+    background-color: var(--surface0);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.intro-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.introduction h1 {
+    color: var(--mauve);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    color: var(--text);
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--mauve);
+    color: var(--crust);
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--lavender);
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: var(--mauve);
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.about-section p {
+    color: var(--text);
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Skills Section */
+.skills-section, .Programming_Languages-section{
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills-section, .Programming_Languages-section h2{
+    color: var(--mauve);
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.programming-languages-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
+
+.side-box {
+    width: 150px;
+    height: 150px;
+    background-color: var(--surface0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.side-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#PL_box {
+    background-color: var(--surface1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 20px;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#name {
+    color: var(--mauve);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+#text {
+    color: var(--subtext1);
+}
+
+.arrow {
+    background-color: var(--surface2);
+    color: var(--text);
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+    background-color: var(--overlay0);
+}
+
+#prev-arrow {
+    margin-right: 10px;
+}
+
+#next-arrow {
+    margin-left: 10px;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.projects-section h2 {
+    color: var(--mauve);
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+#project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    background-color: var(--surface1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.project h3 {
+    color: var(--mauve);
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: var(--subtext1);
+}
+
+.github-icon {
+    max-width: 5%;
+    max-height: auto;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: var(--mauve);
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--surface0);
+    color: var(--text);
+}
+
+#contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#contact-form button {
+    background-color: var(--mauve);
+    color: var(--crust);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: var(--lavender);
+}
+
+/* Footer Styles */
+.footer-container {
+    background-color: var(--mantle);
+    color: var(--text);
+    padding: 40px 0 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    color: var(--mauve);
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: var(--subtext1);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--lavender);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid var(--surface0);
+    color: var(--overlay2);
+    font-size: 14px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: var(--mantle);
+        padding: 20px;
+        gap: 10px;
+        z-index: 100;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .programming-languages-carousel {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+    
+    .side-box {
+        display: none;
+    }
+    
+    #PL_box {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .arrow {
+        margin: 10px 0;
+    }
+    
+    #prev-arrow, #next-arrow {
+        margin: 0;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.csv-viewer {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: var(--surface1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.csv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: var(--surface2);
+    border-bottom: 1px solid var(--overlay0);
+}
+
+.csv-header h3 {
+    margin: 0;
+    color: var(--mauve);
+    font-size: 16px;
+    font-family: 'Courier New', monospace;
+}
+
+.csv-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.csv-btn {
+    background-color: var(--mauve);
+    color: var(--crust);
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.csv-btn:hover {
+    background-color: var(--lavender);
+}
+
+.csv-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+}
+
+.csv-table th,
+.csv-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--surface0);
+}
+
+.csv-table th {
+    background-color: var(--surface2);
+    color: var(--text);
+    font-weight: bold;
+}
+
+/* Zebra striping for rows */
+.csv-table tr:nth-child(even) {
+    background-color: var(--surface0);
+}
+
+.csv-table tr:hover {
+    background-color: var(--overlay0);
+}
+
+/* Highlight specific columns */
+.csv-table .col0 {
+    color: var(--blue);
+}
+
+.csv-table .col1 {
+    color: var(--green);
+}
+
+@media screen and (max-width: 768px) {
+    .csv-viewer {
+        max-width: 100%;
+    }
+    
+    .csv-table {
+        font-size: 12px;
+    }
+    
+    .csv-table th,
+    .csv-table td {
+        padding: 6px 8px;
+    }
+}
+

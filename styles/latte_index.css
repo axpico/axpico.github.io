@@ -286,6 +286,11 @@ header {
     color: var(--subtext1);
 }
 
+.project img {
+    max-width: 100%;
+    max-height: auto;
+}
+
 .github-icon {
     max-width: 5%;
     max-height: auto;

@@ -1,4 +1,3 @@
-// Define the content for programming languages and their projects
 const contentSets = [
     {
         name: "Java",
@@ -6,16 +5,16 @@ const contentSets = [
         text: "Java is a class-based, object-oriented programming language designed for portability and cross-platform development.",
         projects: [
             {
-                name: "Java Project 1",
-                image: "images/projects/java_project1.jpg",
-                description: "An Android application that helps users track their daily activities and habits.",
-                githubLink: "https://github.com/yourusername/java-project1"
+                name: "Library Management System",
+                image: "images/projects/java_library.jpg",
+                description: "A comprehensive system to manage books, borrowers, and lending operations with user authentication and reporting features.",
+                githubLink: "https://github.com/yourusername/java-library-management"
             },
             {
-                name: "Java Project 2",
-                image: "images/projects/java_project2.jpg",
-                description: "A Spring Boot REST API for managing a digital library system.",
-                githubLink: "https://github.com/yourusername/java-project2"
+                name: "Hospital Management System",
+                image: "images/projects/java_hospital.jpg",
+                description: "An advanced system that manages patient records, doctor schedules, appointments, billing, and medical histories with reporting capabilities.",
+                githubLink: "https://github.com/yourusername/java-hospital-management"
             }
         ]
     },
@@ -25,16 +24,16 @@ const contentSets = [
         text: "Python is an interpreted, high-level, general-purpose programming language known for its readability and versatility.",
         projects: [
             {
-                name: "Python Project 1",
-                image: "images/projects/python_project1.jpg",
-                description: "A machine learning model that predicts stock market trends using historical data.",
-                githubLink: "https://github.com/yourusername/python-project1"
+                name: "Image Classifier",
+                image: "images/projects/python_ml.jpg",
+                description: "A simple machine learning project that can distinguish between real photos and AI-generated images using TensorFlow.",
+                githubLink: "https://github.com/yourusername/python-image-classifier"
             },
             {
-                name: "Python Project 2",
-                image: "images/projects/python_project2.jpg",
-                description: "A Django web application for managing personal finances and budgeting.",
-                githubLink: "https://github.com/yourusername/python-project2"
+                name: "Weather App",
+                image: "images/projects/python_weather.png",
+                description: "A simple application that fetches and displays current weather data using a free API.",
+                githubLink: "https://github.com/axpico/python-weather-app.git"
             }
         ]
     },
@@ -44,16 +43,16 @@ const contentSets = [
         text: "Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.",
         projects: [
             {
-                name: "Rust Project 1",
-                image: "images/projects/rust_project1.jpg",
-                description: "A command-line tool built with Rust that efficiently processes large data files.",
-                githubLink: "https://github.com/yourusername/rust-project1"
+                name: "Simple File Explorer",
+                image: "images/projects/rust_explorer.jpg",
+                description: "A command-line file explorer that allows users to navigate directories, view files, and perform basic file operations.",
+                githubLink: "https://github.com/yourusername/rust-file-explorer"
             },
             {
-                name: "Rust Project 2",
-                image: "images/projects/rust_project2.jpg",
-                description: "A high-performance web server implemented in Rust using async I/O.",
-                githubLink: "https://github.com/yourusername/rust-project2"
+                name: "File Organizer",
+                image: "images/projects/rust_files.jpg",
+                description: "A simple utility that organizes files in a directory based on their types or creation dates.",
+                githubLink: "https://github.com/yourusername/rust-file-organizer"
             }
         ]
     },
@@ -63,16 +62,16 @@ const contentSets = [
         text: "Ruby is a dynamic, object-oriented programming language focused on simplicity and productivity with an elegant syntax that is natural to read and easy to write.",
         projects: [
             {
-                name: "Ruby Project 1",
-                image: "images/projects/ruby_project1.jpg",
-                description: "A Ruby on Rails web application for content management with user authentication and authorization.",
-                githubLink: "https://github.com/yourusername/ruby-project1"
+                name: "Personal Finance Tracker",
+                image: "images/projects/ruby_finance.jpg",
+                description: "An application that helps users track income, expenses, and budgets with data visualization for financial summaries.",
+                githubLink: "https://github.com/yourusername/ruby-finance-tracker"
             },
             {
-                name: "Ruby Project 2",
-                image: "images/projects/ruby_project2.jpg",
-                description: "A command-line utility built with Ruby that automates repetitive development tasks.",
-                githubLink: "https://github.com/yourusername/ruby-project2"
+                name: "Recipe Sharing Platform",
+                image: "images/projects/ruby_recipe.jpg",
+                description: "A web application where users can share recipes, rate others' contributions, and organize their favorite culinary creations.",
+                githubLink: "https://github.com/yourusername/ruby-recipe-platform"
             }
         ]
     },
@@ -82,16 +81,16 @@ const contentSets = [
         text: "JavaScript is a versatile scripting language that enables interactive web content, supporting both frontend and backend development.",
         projects: [
             {
-                name: "JavaScript Project 1",
-                image: "images/projects/javascript_project1.jpg",
-                description: "An interactive web application built with modern JavaScript frameworks for real-time data visualization.",
-                githubLink: "https://github.com/yourusername/javascript-project1"
+                name: "Personal Portfolio Website",
+                image: "images/projects/js_portfolio.jpg",
+                description: "A responsive personal website to showcase your skills and projects using HTML, CSS, and JavaScript.",
+                githubLink: "https://github.com/yourusername/js-portfolio"
             },
             {
-                name: "JavaScript Project 2",
-                image: "images/projects/javascript_project2.jpg",
-                description: "A responsive single-page application using JavaScript and APIs to deliver dynamic content.",
-                githubLink: "https://github.com/yourusername/javascript-project2"
+                name: "Memory Card Game",
+                image: "images/projects/js_memory.jpg",
+                description: "An interactive memory card matching game with animations and score tracking.",
+                githubLink: "https://github.com/yourusername/js-memory-game"
             }
         ]
     }
@@ -178,7 +177,7 @@ function updateProjects(languageIndex) {
         projectElement.innerHTML = `
             <h3>${project.name}</h3>
             <div class="project-image">
-                <img src="${project.image}" alt="${project.name}">
+                <img class="project_image" src="${project.image}" alt="${project.name}">
             </div>
             <p>${project.description}</p>
             <a href="${project.githubLink}" class="github-link" target="_blank" rel="noopener noreferrer">

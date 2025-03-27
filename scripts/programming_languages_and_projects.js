@@ -107,8 +107,8 @@ let elements = {};
  */
 function cacheElements() {
     elements = {
-        leftBox: document.getElementById('left-box'),
-        rightBox: document.getElementById('right-box'),
+        topBox: document.getElementById('top-box'),
+        bottomBox: document.getElementById('bottom-box'),
         name: document.getElementById('name'),
         image: document.getElementById('image'),
         text: document.getElementById('text'),
@@ -122,39 +122,33 @@ function cacheElements() {
  * Updates the carousel content based on the current index
  */
 function updateContent() {
-    // Calculate indices for left, middle, and right content
-    const leftIndex = (currentIndex - 1 + contentSets.length) % contentSets.length;
+    const topIndex = (currentIndex - 1 + contentSets.length) % contentSets.length;
     const middleIndex = currentIndex;
-    const rightIndex = (currentIndex + 1) % contentSets.length;
+    const bottomIndex = (currentIndex + 1) % contentSets.length;
 
-    // Clear previous content
-    elements.leftBox.innerHTML = '';
-    elements.rightBox.innerHTML = '';
+    elements.topBox.innerHTML = '';
+    elements.bottomBox.innerHTML = '';
 
-    // Update left box
-    const leftImg = document.createElement('img');
-    leftImg.src = contentSets[leftIndex].image;
-    leftImg.alt = contentSets[leftIndex].name;
-    leftImg.style.maxWidth = '100%';
-    leftImg.style.height = 'auto';
-    elements.leftBox.appendChild(leftImg);
+    const topImg = document.createElement('img');
+    topImg.src = contentSets[topIndex].image;
+    topImg.alt = contentSets[topIndex].name;
+    topImg.style.maxWidth = '100%';
+    topImg.style.height = 'auto';
+    elements.topBox.appendChild(topImg);
 
-    // Update middle content
     const middleContent = contentSets[middleIndex];
     elements.name.textContent = middleContent.name;
     elements.image.src = middleContent.image;
     elements.image.alt = middleContent.name;
     elements.text.textContent = middleContent.text;
 
-    // Update right box
-    const rightImg = document.createElement('img');
-    rightImg.src = contentSets[rightIndex].image;
-    rightImg.alt = contentSets[rightIndex].name;
-    rightImg.style.maxWidth = '100%';
-    rightImg.style.height = 'auto';
-    elements.rightBox.appendChild(rightImg);
+    const bottomImg = document.createElement('img');
+    bottomImg.src = contentSets[bottomIndex].image;
+    bottomImg.alt = contentSets[bottomIndex].name;
+    bottomImg.style.maxWidth = '100%';
+    bottomImg.style.height = 'auto';
+    elements.bottomBox.appendChild(bottomImg);
 
-    // Update projects
     updateProjects(middleIndex);
 }
 
@@ -181,7 +175,7 @@ function updateProjects(languageIndex) {
             </div>
             <p>${project.description}</p>
             <a href="${project.githubLink}" class="github-link" target="_blank" rel="noopener noreferrer">
-                View on GitHub <img class="github-icon" src="images/logos/social icons/github.svg">
+                <img class="github-icon" src="images/logos/social icons/github.svg"> View on GitHub
             </a>
         `;
         

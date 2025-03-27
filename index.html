@@ -15,8 +15,7 @@
             <a href="#home" class="nav-link active">Home</a>
             <a href="#about" class="nav-link">About</a>
             <a href="#skills" class="nav-link">Skills</a>
-            <a href="#Programming_Languages" class="nav-link">Programming Languages</a>
-            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#Programming_Languages" class="nav-link">Programming languages & projects</a>
             <a href="#contact" class="nav-link">Contact</a>
         </nav>
         <div class="menu-toggle">&#9776;</div>
@@ -86,26 +85,28 @@
     </section>
 
     <section id="Programming_Languages" class="Programming_Languages-section">
-        <h2>Programming languages</h2>
-        <div class="programming-languages-carousel">
-            <div class="side-box" id="left-box"></div>
-            <button class="arrow" id="prev-arrow">&#8249;</button>
-            <div id="PL_box">
-                <h3 id="name"></h3>
-                <img id="image" src="" alt="Language Logo">
-                <p id="text"></p>
+        <h2>Programming Languages and Projects</h2>
+        <div class="pl-projects-container">
+            <div class="programming-languages-carousel">
+                <button class="arrow" id="prev-arrow">&#8593;</button>
+                <div class="side-box" id="top-box"></div>
+                <div id="PL_box">
+                    <h3 id="name"></h3>
+                    <img id="image" src="" alt="Language Logo">
+                    <p id="text"></p>
+                </div>
+                <div class="side-box" id="bottom-box"></div>
+                <button class="arrow" id="next-arrow">&#8595;</button>
             </div>
-            <button class="arrow" id="next-arrow">&#8250;</button>
-            <div class="side-box" id="right-box"></div>
+    
+            <div id="projects" class="projects-section">
+                <h2>Projects</h2>
+                <div id="project-container">
+                    <!-- Projects will be dynamically inserted here -->
+                </div>
+            </div>
         </div>
-    </section>
-
-    <section id="projects" class="projects-section">
-        <h2>Projects</h2>
-        <div id="project-container">
-            <!-- Projects will be dynamically inserted here based on the selected programming language -->
-        </div>
-    </section>
+    </section>    
 
     <section id="contact" class="contact-section">
         <h2>Contact Me</h2>

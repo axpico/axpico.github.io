@@ -28,6 +28,8 @@
     --crust: #dce0e8;
 }
 
+
+
 a {
     color: var(--sky);
     text-decoration: none;
@@ -171,11 +173,20 @@ header {
     margin-bottom: 30px;
 }
 
+.pl-projects-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
 .programming-languages-carousel {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 450px;
+    height: auto;
+    flex: 1;
 }
 
 .side-box {
@@ -187,6 +198,7 @@ header {
     align-items: center;
     border-radius: 10px;
     overflow: hidden;
+    margin: 10px 0;
 }
 
 .side-box img {
@@ -200,7 +212,7 @@ header {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    margin: 0 20px;
+    margin: 20px 0;
     width: 300px;
     height: 350px;
     display: flex;
@@ -242,19 +254,20 @@ header {
 }
 
 #prev-arrow {
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 #next-arrow {
-    margin-left: 10px;
+    margin-top: 10px;
 }
 
 /* Projects Section */
 .projects-section {
-    padding: 80px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
+    flex: 1;
+    text-align: left;
+    padding: 0;
+    max-width: none;
+    margin: 0;
 }
 
 .projects-section h2 {
@@ -265,8 +278,7 @@ header {
 
 #project-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -274,7 +286,7 @@ header {
     background-color: var(--surface1);
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
+    width: 100%;
 }
 
 .project h3 {
@@ -286,14 +298,14 @@ header {
     color: var(--subtext1);
 }
 
-.project img {
+.project_image {
     max-width: 100%;
-    max-height: auto;
+    height: auto;
 }
 
 .github-icon {
-    max-width: 5%;
-    max-height: auto;
+    max-width: 2.5%;
+    height: auto;
 }
 
 /* Contact Section */

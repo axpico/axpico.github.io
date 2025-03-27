@@ -50,9 +50,9 @@ const contentSets = [
             },
             {
                 name: "File Organizer",
-                image: "images/projects/rust_files.jpg",
+                image: "images/projects/rust_files.png",
                 description: "A simple utility that organizes files in a directory based on their types or creation dates.",
-                githubLink: "https://github.com/yourusername/rust-file-organizer"
+                githubLink: "https://github.com/axpico/file-organizer.git"
             }
         ]
     },
@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
+
     // Set active link on page load
     setActiveNavLink();
     

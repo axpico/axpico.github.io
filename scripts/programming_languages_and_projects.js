@@ -6,7 +6,7 @@ const contentSets = [
         projects: [
             {
                 name: "Library Management System",
-                image: "images/projects/java_library.jpg",
+                image: "images/projects/java_library.png",
                 description: "A comprehensive system to manage books, borrowers, and lending operations with user authentication and reporting features.",
                 githubLink: "https://github.com/yourusername/java-library-management"
             },
@@ -26,7 +26,7 @@ const contentSets = [
             {
                 name: "Image Classifier",
                 image: "images/projects/python_ml.jpg",
-                description: "A simple machine learning project that can distinguish between real photos and AI-generated images using TensorFlow.",
+                description: "A simple machine learning project that can distinguish between real photos and AI-generated images using PyTorch.",
                 githubLink: "https://github.com/yourusername/python-image-classifier"
             },
             {

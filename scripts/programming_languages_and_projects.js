@@ -8,7 +8,7 @@ const contentSets = [
                 name: "Library Management System",
                 image: "images/projects/java_library.png",
                 description: "A comprehensive system to manage books, borrowers, and lending operations with user authentication and reporting features.",
-                githubLink: "https://github.com/yourusername/java-library-management"
+                githubLink: "https://github.com/axpico/Library-Management-System.git"
             },
             {
                 name: "Hospital Management System",

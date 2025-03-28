@@ -83,14 +83,14 @@ const contentSets = [
             {
                 name: "Personal Portfolio Website",
                 image: "images/projects/js_portfolio.jpg",
-                description: "A responsive personal website to showcase your skills and projects using HTML, CSS, and JavaScript.",
+                description: "A responsive personal website to showcase my skills and projects using HTML, CSS, and JavaScript.",
                 githubLink: "https://github.com/yourusername/js-portfolio"
             },
             {
                 name: "Memory Card Game",
-                image: "images/projects/js_memory.jpg",
+                image: "images/projects/js_memory.png",
                 description: "An interactive memory card matching game with animations and score tracking.",
-                githubLink: "https://github.com/yourusername/js-memory-game"
+                githubLink: "https://github.com/axpico/Memory-Card-Game.git"
             }
         ]
     }

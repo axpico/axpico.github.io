@@ -25,9 +25,9 @@ const contentSets = [
         projects: [
             {
                 name: "Image Classifier",
-                image: "images/projects/python_ml.jpg",
+                image: "images/projects/python_ml.png",
                 description: "A simple machine learning project that can distinguish between real photos and AI-generated images using PyTorch.",
-                githubLink: "https://github.com/yourusername/python-image-classifier"
+                githubLink: "https://github.com/axpico/image-classifier-ai-and-not.git"
             },
             {
                 name: "Weather App",

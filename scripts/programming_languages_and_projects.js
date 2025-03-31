@@ -44,9 +44,9 @@ const contentSets = [
         projects: [
             {
                 name: "Simple File Explorer",
-                image: "images/projects/rust_explorer.jpg",
+                image: "images/projects/rust_explorer.png",
                 description: "A command-line file explorer that allows users to navigate directories, view files, and perform basic file operations.",
-                githubLink: "https://github.com/yourusername/rust-file-explorer"
+                githubLink: "https://github.com/axpico/rust-file-explorer.git"
             },
             {
                 name: "File Organizer",

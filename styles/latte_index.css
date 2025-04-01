@@ -28,8 +28,6 @@
     --crust: #dce0e8;
 }
 
-
-
 a {
     color: var(--sky);
     text-decoration: none;
@@ -68,6 +66,7 @@ header {
     color: var(--mauve);
 }
 
+/* nav & menu*/
 .nav-menu {
     display: flex;
     gap: 20px;
@@ -91,9 +90,80 @@ header {
 }
 
 .menu-toggle {
-    display: none;
+    display: none; 
     font-size: 24px;
     cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Dropdown Menu */
+    .nav-menu {
+        display: none; /* Hide menu by default */
+        position: absolute;
+        top: 60px; /* Adjusted for header height */
+        left: 0;
+        right: 0;
+        flex-direction: column; /* Stack links vertically */
+        background-color: var(--mantle); /* Background color for dropdown */
+        padding: 20px; /* Add padding to dropdown */
+        gap: 10px; /* Space between links */
+        z-index: 1000; /* Ensure dropdown appears above other elements */
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .nav-link {
+        text-align: center; /* Center links in dropdown */
+        padding: 10px; /* Increase padding for touch targets */
+    }
+
+    .menu-toggle {
+        display: block; /* Show toggle button on small screens */
+        cursor: pointer;
+        color: var(--text); /* Match text color */
+        background-color: transparent; /* Transparent background */
+        border: none; /* Remove border */
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px; /* Adjust header padding for mobile view */
+    }
+
+    /* Programming Languages Carousel */
+    .programming-languages-carousel {
+        flex-direction: column; /* Stack carousel items vertically */
+        height: auto; /* Adjust height for mobile view */
+        gap: 20px; /* Space between items */
+    }
+
+    .side-box {
+        display: none; /* Hide side boxes on mobile screens */
+    }
+
+    #PL_box {
+        width: 100%; /* Full width for mobile view */
+        max-width: 300px; /* Limit maximum width of the box */
+    }
+
+    .arrow {
+        margin: 10px 0; /* Add vertical margin for arrows */
+    }
+
+    #prev-arrow, #next-arrow {
+        margin: 0; /* Remove extra margins for arrows */
+    }
+
+    /* Footer Content */
+    .footer-content {
+        flex-direction: column; /* Stack footer content vertically */
+        gap: 20px; /* Space between footer sections */
+    }
 }
 
 /* Introduction Section */
@@ -417,58 +487,6 @@ header {
     padding: 20px 20px 0;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    .nav-menu {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        background-color: var(--mantle);
-        padding: 20px;
-        gap: 10px;
-        z-index: 100;
-    }
-    
-    .nav-menu.active {
-        display: flex;
-    }
-    
-    .menu-toggle {
-        display: block;
-    }
-    
-    .programming-languages-carousel {
-        flex-direction: column;
-        height: auto;
-        gap: 20px;
-    }
-    
-    .side-box {
-        display: none;
-    }
-    
-    #PL_box {
-        width: 100%;
-        max-width: 300px;
-    }
-    
-    .arrow {
-        margin: 10px 0;
-    }
-    
-    #prev-arrow, #next-arrow {
-        margin: 0;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        gap: 20px;
-    }
-}
-
 .csv-viewer {
     width: 100%;
     max-width: 400px;
@@ -567,8 +585,6 @@ header {
         padding: 6px 8px;
     }
 }
-
-
 
 /* General Animations */
 @keyframes fadeIn {

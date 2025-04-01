@@ -57,25 +57,6 @@ const contentSets = [
         ]
     },
     {
-        name: "Ruby",
-        image: "images/logos/programming languages/ruby.svg",
-        text: "Ruby is a dynamic, object-oriented programming language focused on simplicity and productivity with an elegant syntax that is natural to read and easy to write.",
-        projects: [
-            {
-                name: "Personal Finance Tracker",
-                image: "images/projects/ruby_finance.jpg",
-                description: "An application that helps users track income, expenses, and budgets with data visualization for financial summaries.",
-                githubLink: "https://github.com/yourusername/ruby-finance-tracker"
-            },
-            {
-                name: "Recipe Sharing Platform",
-                image: "images/projects/ruby_recipe.jpg",
-                description: "A web application where users can share recipes, rate others' contributions, and organize their favorite culinary creations.",
-                githubLink: "https://github.com/yourusername/ruby-recipe-platform"
-            }
-        ]
-    },
-    {
         name: "JavaScript",
         image: "images/logos/programming languages/javascript.svg",
         text: "JavaScript is a versatile scripting language that enables interactive web content, supporting both frontend and backend development.",

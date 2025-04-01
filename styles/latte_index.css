@@ -487,11 +487,12 @@ header {
     padding: 20px 20px 0;
 }
 
+/* csv table */
 .csv-viewer {
     width: 100%;
     max-width: 400px;
     margin: 20px auto;
-    background-color: var(--surface1);
+    background-color: var(--surface1); 
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -502,35 +503,15 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 12px 15px;
-    background-color: var(--surface2);
+    background-color: var(--overlay0);
     border-bottom: 1px solid var(--overlay0);
 }
 
 .csv-header h3 {
     margin: 0;
-    color: var(--mauve);
+    color: var(--mauve); 
     font-size: 16px;
     font-family: 'Courier New', monospace;
-}
-
-.csv-controls {
-    display: flex;
-    gap: 8px;
-}
-
-.csv-btn {
-    background-color: var(--mauve);
-    color: var(--crust);
-    border: none;
-    border-radius: 4px;
-    padding: 5px 10px;
-    font-size: 12px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.csv-btn:hover {
-    background-color: var(--lavender);
 }
 
 .csv-table {
@@ -548,27 +529,31 @@ header {
 }
 
 .csv-table th {
-    background-color: var(--surface2);
-    color: var(--text);
+    background-color: var(--overlay1);
+    color: var(--sky); 
     font-weight: bold;
 }
 
 /* Zebra striping for rows */
 .csv-table tr:nth-child(even) {
-    background-color: var(--surface0);
+    background-color: var(--surface0); 
+}
+
+.csv-table tr:nth-child(odd) {
+    background-color: var(--base);
 }
 
 .csv-table tr:hover {
-    background-color: var(--overlay0);
+    background-color: var(--lavender); 
 }
 
 /* Highlight specific columns */
 .csv-table .col0 {
-    color: var(--blue);
+    color: var(--blue); 
 }
 
 .csv-table .col1 {
-    color: var(--green);
+    color: var(--peach); 
 }
 
 @media screen and (max-width: 768px) {

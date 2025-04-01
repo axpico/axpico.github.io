@@ -65,7 +65,7 @@ const contentSets = [
                 name: "Personal Portfolio Website",
                 image: "images/projects/js_portfolio.jpg",
                 description: "A responsive personal website to showcase my skills and projects using HTML, CSS, and JavaScript.",
-                githubLink: "https://github.com/yourusername/js-portfolio"
+                githubLink: "https://github.com/axpico/axpico.github.io.git"
             },
             {
                 name: "Memory Card Game",

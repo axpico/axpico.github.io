@@ -34,7 +34,7 @@ a {
 }
 
 body {
-    font-family: "Courier New", sans-serif;
+    font-family: Arial, sans-serif;
     background-color: var(--base);
     color: var(--text);
     margin: 0;

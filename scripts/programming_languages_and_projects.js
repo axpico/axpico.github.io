@@ -11,7 +11,7 @@ const contentSets = [
                 githubLink: "https://github.com/axpico/Library-Management-System.git"
             },
             {
-                name: "Tic tac toe game",
+                name: "Tic-Tac-Toe game",
                 image: "images/projects/java-tictactoe-game.png",
                 description: "A Classic Tic-Tac-Toe game with a graphical user interface build using java Swing. Feature include a two-player mode and an AI opponent with multiple difficulty levels.",
                 githubLink: "https://github.com/axpico/java-tictactoe-game.git"

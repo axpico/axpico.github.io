@@ -11,10 +11,10 @@ const contentSets = [
                 githubLink: "https://github.com/axpico/Library-Management-System.git"
             },
             {
-                name: "Hospital Management System",
-                image: "images/projects/java_hospital.jpg",
-                description: "An advanced system that manages patient records, doctor schedules, appointments, billing, and medical histories with reporting capabilities.",
-                githubLink: "https://github.com/yourusername/java-hospital-management"
+                name: "Tic tac toe game",
+                image: "images/projects/java-tictactoe-game.png",
+                description: "A Classic Tic-Tac-Toe game with a graphical user interface build using java Swing. Feature include a two-player mode and an AI opponent with multiple difficulty levels.",
+                githubLink: "https://github.com/axpico/java-tictactoe-game.git"
             }
         ]
     },

@@ -68,7 +68,7 @@ const contentSets = [
                 githubLink: "https://github.com/axpico/axpico.github.io.git"
             },
             {
-                name: "Memory Card Game",
+                name: "<a href=\"Memory-Card-Game\\index.html\">Memory Card Game</a>",
                 image: "images/projects/js_memory.png",
                 description: "An interactive memory card matching game with animations and score tracking.",
                 githubLink: "https://github.com/axpico/Memory-Card-Game.git"

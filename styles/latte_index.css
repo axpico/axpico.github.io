@@ -716,3 +716,93 @@ header {
 .programming-language:hover img {
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
 }
+
+/* Download Section */
+.download-section {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.download-section h2 {
+    color: var(--mauve);
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: var(--mauve);
+    color: var(--crust);
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.download-button:hover {
+    background-color: var(--lavender);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.download-button:active {
+    transform: translateY(-1px);
+}
+
+.download-button i {
+    margin-right: 8px;
+}
+
+/* Download Button Animation */
+@keyframes subtlePulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.download-button {
+    animation: subtlePulse 3s infinite;
+}
+
+/* Add a ripple effect */
+.download-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+.download-button:hover::after {
+    animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(20, 20);
+        opacity: 0;
+    }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .download-button {
+        width: 80%;
+        padding: 15px;
+    }
+}

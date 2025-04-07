@@ -374,8 +374,11 @@ header {
 }
 
 .github-icon {
-    max-width: 2.5%;
-    height: auto;
+    /* Use fixed size for consistency */
+    width: 1.2em; 
+    height: 1.2em;
+    vertical-align: middle; /* Align icon better with text */
+    margin-right: 0.3em; /* Add some space between icon and text */
 }
 
 /* Contact Section */

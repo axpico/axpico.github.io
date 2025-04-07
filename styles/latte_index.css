@@ -716,10 +716,9 @@ header {
     transition: filter 0.3s ease;
 }
 
-.programming-language:hover img {
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
-}
-<<<<<<< HEAD
+
+/* Download Section */
+.download-section {
 =======
 
 /* Download Section */
@@ -814,4 +813,3 @@ header {
         padding: 15px;
     }
 }
->>>>>>> 73acd96d5854057970e7d37d9fcf6cca62ea5e83

@@ -68,7 +68,8 @@ const contentSets = [
                 githubLink: "https://github.com/axpico/axpico.github.io.git"
             },
             {
-                name: "<a href=\"Memory-Card-Game/index.html\">Memory Card Game</a>",
+                name: "Memory Card Game", // Keep name separate
+                projectUrl: "Memory-Card-Game/index.html", // Add specific project URL
                 image: "images/projects/js_memory.png",
                 description: "An interactive memory card matching game with animations and score tracking.",
                 githubLink: "https://github.com/axpico/Memory-Card-Game.git"
@@ -148,9 +149,14 @@ function updateProjects(languageIndex) {
     projects.forEach(project => {
         const projectElement = document.createElement('div');
         projectElement.className = 'project';
+
+        // Create project title, linking if projectUrl exists
+        const projectTitle = project.projectUrl 
+            ? `<a href="${project.projectUrl}" target="_blank" rel="noopener noreferrer">${project.name}</a>` 
+            : project.name;
         
         projectElement.innerHTML = `
-            <h3>${project.name}</h3>
+            <h3>${projectTitle}</h3>
             <div class="project-image">
                 <img class="project_image" src="${project.image}" alt="${project.name}">
             </div>

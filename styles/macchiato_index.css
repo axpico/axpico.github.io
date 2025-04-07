@@ -742,7 +742,10 @@ header {
     padding: 80px 20px;
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
+    /* Use flexbox for centering */
+    display: flex;
+    flex-direction: column; /* Stack title and button vertically */
+    align-items: center; /* Center items horizontally */
 }
 
 .download-section h2 {

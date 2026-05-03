@@ -28,6 +28,20 @@ window.PRODUCTS = [
     "date": "2026-05-03"
   },
   {
+    "asin": "B00NPXEEC4",
+    "title": "Maybelline New York Correttore Multi-Uso, Idratante e con Coprenza Modulabile, Imperfezioni e Occhiaie Coperte, Con Bacche di Goji e Haloxyl, Cancella Età, Tonalità: 02 Nude, 6,8 ml",
+    "price": "9.85",
+    "original_price": "",
+    "discount": "",
+    "rating": "",
+    "rating_count": "",
+    "affiliate_link": "https://www.amazon.it/dp/B00NPXEEC4?tag=axpico-21",
+    "tracking_link": "",
+    "image": "/assets/images/products/B00NPXEEC4.png",
+    "category": "beauty",
+    "date": "2026-05-03"
+  },
+  {
     "asin": "B0GN2GWKT3",
     "title": "Pokémon: collezione illustrazione Primi compagni d’avventura - Serie 1 del GCC Pokémon (tre carte promozionali, due buste di espansione e un foglio di adesivi), Edizione in Italiano",
     "price": "42.90",

@@ -56,6 +56,20 @@ window.PRODUCTS = [
     "date": "2026-05-03"
   },
   {
+    "asin": "B07JH83GHR",
+    "title": "PlayStation Store Gift Card 10 EUR | PSN Account italiano | PS5/PS4 Codice download",
+    "price": "10.00",
+    "original_price": "",
+    "discount": "",
+    "rating": "",
+    "rating_count": "",
+    "affiliate_link": "https://www.amazon.it/dp/B07JH83GHR?tag=axpico-21",
+    "tracking_link": "",
+    "image": "/assets/images/products/B07JH83GHR.png",
+    "category": "videogames",
+    "date": "2026-05-03"
+  },
+  {
     "asin": "B0GN2GWKT3",
     "title": "Pokémon: collezione illustrazione Primi compagni d’avventura - Serie 1 del GCC Pokémon (tre carte promozionali, due buste di espansione e un foglio di adesivi), Edizione in Italiano",
     "price": "42.90",

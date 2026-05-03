@@ -1,0 +1,40 @@
+name: Build HTML from markdown posts
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "_posts/**"
+      - "scripts/build_posts.py"
+      - ".github/workflows/build.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install pyyaml markdown
+
+      - name: Generate HTML pages and products.json
+        run: python scripts/build_posts.py
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add posts/ data/products.json
+          git diff --staged --quiet && echo "Nothing to commit" && exit 0
+          git commit -m "build: auto-generate HTML + products.json from markdown posts"
+          git push

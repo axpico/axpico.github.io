@@ -40,5 +40,19 @@ window.PRODUCTS = [
     "image": "/assets/images/products/B0GN2GWKT3.png",
     "category": "toys",
     "date": "2026-05-03"
+  },
+  {
+    "asin": "B07SZFGQ18",
+    "title": "Skechers Graceful Get Connected SneakerDonna",
+    "price": "36.95",
+    "original_price": "",
+    "discount": "",
+    "rating": "",
+    "rating_count": "",
+    "affiliate_link": "https://www.amazon.it/dp/B07SZFGQ18?tag=axpico-21",
+    "tracking_link": "",
+    "image": "/assets/images/products/B07SZFGQ18.png",
+    "category": "fashion",
+    "date": "2026-05-03"
   }
 ];

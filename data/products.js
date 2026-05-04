@@ -14,6 +14,20 @@ window.PRODUCTS = [
     "date": "2026-05-04"
   },
   {
+    "asin": "B08H99BPJN",
+    "title": "Sony PlayStation®5 - DualSense™ Wireless Controller White",
+    "price": "70.90",
+    "original_price": "",
+    "discount": "",
+    "rating": "",
+    "rating_count": "",
+    "affiliate_link": "https://www.amazon.it/dp/B08H99BPJN?tag=axpico-21",
+    "tracking_link": "",
+    "image": "/assets/images/products/B08H99BPJN.png",
+    "category": "videogames",
+    "date": "2026-05-04"
+  },
+  {
     "asin": "B07RSCPH4N",
     "title": "Amazon Basics Sacchetti sottovuoto con pompa a mano, Cerniera, misura grande, confezione da 5, Trasparente",
     "price": "11.37",
